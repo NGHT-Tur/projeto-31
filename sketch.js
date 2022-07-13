@@ -76,7 +76,7 @@ function draw() {
   for (var stone of stones) {
     stone.show();
     var pos = stone.body.position;
-    var distance = dist(zombie.position.x, zombie.position.y);
+    var distance = dist(zombie.position.x, zombie.position.y, pos.x, pos.y);
 
 
     if (distance <= 50) {
